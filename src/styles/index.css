@@ -29,6 +29,30 @@
     gap: 20px;
 }
 
+.section-heading{
+    font-size: var(--font-size-medium200);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.more-courses-div{
+    text-align: right;
+    margin-bottom: 30px;
+}
+.more-courses-div a{
+    transition: all .3s ease-in-out;
+}
+.more-courses-div a{
+   animation: icon-slideleftright 1.5s infinite;
+}
+
+.more-courses-div a:hover{
+    background-color: var(--link-hover-color);
+    padding: 4px 4px;
+    border-radius: var(--border-radius);
+}
+  
 .dv{
-height: 100vh;
+ height: 100vh;
+ background-color: aqua;
 }
