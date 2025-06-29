@@ -1,8 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
+    <link rel="stylesheet" href="/src/styles/common.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -10,9 +12,125 @@
     <div id="app">
       <header>
         <nav>
-
+          <div class="logo-div">
+            <h1 class="logo">LearnSphere</h1>
+          </div>
+          <div class="menu">
+            <i class="ri-menu-line menu-btn"></i>
+            <ul>
+              <i class="ri-close-large-fill close-btn"></i>
+              <li><a href="/courses.html">Courses</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="">Login</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
+      <main>
+        <section class="hero">
+          <div class="hero-textcontent">
+            <h1 class="hero-heading">Learn Anything, Anywhere</h1>
+            <p class="hero-subtext">Join thousands of learners worldwide.</p>
+            <div class="hero-cta">
+              <button class="button primary-cta">Explore Courses</button>
+              <button class="button secondary-cta">Sign Up</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-cards">
+          <div class="card-container">
+            <div class="card">
+              <div class="img-div">
+                <img
+                  src="https://web.dev/static/learn/html/card_720.png"
+                  alt=""
+                />
+              </div>
+              <div class="card-textcontent">
+                <div class="cardheading-div">
+                  <h2 class="card-heading">Mastering Front-End Development</h2>
+                </div>
+                <div class="description-div">
+                  <div class="description">
+                   <p> Learn the essentials of HTML, CSS, and JavaScript.</p>
+                  </div>
+                  <div class="instructor-name">
+                    <p>By Jone Done</p>
+                  </div>
+                  <div class="rating-div">
+                    <div class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <div class="rating">4.5</div>
+                  </div>
+                  <div class="course-timing-div">
+                    <p class="timing">
+                      <span class="hour">6</span><span class="hour-text">hours</span
+                      ><span class="collon"> : </span><span class="min">00</span
+                      ><span class="min-text">min</span>
+                    </p>
+                  </div>
+                    <div class="cta-tech-div">
+                      <div class="tech-div">
+                        <i class="ri-html5-fill"></i>
+                        <i class="ri-css3-fill"></i>
+                        <i class="ri-javascript-fill"></i>
+                      </div>
+                      <div class="cta-div"><button class="button enroll-cta primary-cta">Enroll Now</button></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </section>
+         <div class="card skeleton-card">
+              <div class="skeleton skeleton-img">
+              </div>
+              <div class="skeleton-textcontent">
+                <div class="skeleton skeleton-heading">
+                </div>
+                <div class="skeleton skeleton-description-div">
+                  <div class="skeleton skeleton-description">
+                   <p></p>
+                  </div>
+                  <div class="skeleton skeleton-instructor-name">
+                    <p></p>
+                  </div>
+                  <div class="skeleton skeleton-rating-div">
+                    <div class="skeleton skeleton-stars">
+
+                    </div>
+                    <div class="skeleton skeleton-rating"></div>
+                  </div>
+                  <div class="skeleton skeleton-course-timing-div">
+                    <p class="skeleton skeleton-timing">
+                      <span class="hour"></span><span class="hour-text"></span
+                      ><span class="collon"></span><span class="min"></span
+                      ><span class="min-text"></span>
+                    </p>
+                  </div>
+                  <div class="skeleton skeleton-ctatech-div">
+                     <div class="skeleton-tech">
+                       
+                      </div>
+                      <div class="skeleton-cta"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      </main>
+      <div class="dv"></div>
+      <div class="dv"></div>
     </div>
   </body>
 </html>
