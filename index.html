@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/styles/index.css" />
     <link rel="stylesheet" href="/src/styles/common.css" />
+    <link rel="stylesheet" href="/src/styles/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -40,7 +40,11 @@
         </section>
 
         <section class="feature-cards">
-          <div class="card-container">
+          <h2 class="section-heading">FEATURED COURSES</h2>
+          <div class="more-courses-div">
+            <a href="/courses.html">See more <i class="ri-arrow-right-s-fill"></i></a>
+          </div>
+          <div class="card-container" id="cardContainer">
             <div class="card">
               <div class="img-div">
                 <img
@@ -50,8 +54,9 @@
               </div>
               <div class="card-textcontent">
                 <div class="cardheading-div">
-                  <h2 class="card-heading">Mastering Front-End Development</h2>
+                  <h3 class="card-heading">Mastering Front-End Development</h3>
                 </div>
+
                 <div class="description-div">
                   <div class="description">
                    <p> Learn the essentials of HTML, CSS, and JavaScript.</p>
@@ -67,7 +72,7 @@
                       <i class="ri-star-fill"></i>
                       <i class="ri-star-half-fill"></i>
                     </div>
-                    <div class="rating">4.5</div>
+                    <div class="rating"><p>4.5</p></div>
                   </div>
                   <div class="course-timing-div">
                     <p class="timing">
@@ -76,6 +81,7 @@
                       ><span class="min-text">min</span>
                     </p>
                   </div>
+
                     <div class="cta-tech-div">
                       <div class="tech-div">
                         <i class="ri-html5-fill"></i>
@@ -87,50 +93,21 @@
                 </div>
               </div>
             </div>
+            <!-- <div class="card"></div>
             <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card"></div> -->
           </div>
         </section>
-         <div class="card skeleton-card">
-              <div class="skeleton skeleton-img">
-              </div>
-              <div class="skeleton-textcontent">
-                <div class="skeleton skeleton-heading">
-                </div>
-                <div class="skeleton skeleton-description-div">
-                  <div class="skeleton skeleton-description">
-                   <p></p>
-                  </div>
-                  <div class="skeleton skeleton-instructor-name">
-                    <p></p>
-                  </div>
-                  <div class="skeleton skeleton-rating-div">
-                    <div class="skeleton skeleton-stars">
-
-                    </div>
-                    <div class="skeleton skeleton-rating"></div>
-                  </div>
-                  <div class="skeleton skeleton-course-timing-div">
-                    <p class="skeleton skeleton-timing">
-                      <span class="hour"></span><span class="hour-text"></span
-                      ><span class="collon"></span><span class="min"></span
-                      ><span class="min-text"></span>
-                    </p>
-                  </div>
-                  <div class="skeleton skeleton-ctatech-div">
-                     <div class="skeleton-tech">
-                       
-                      </div>
-                      <div class="skeleton-cta"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
       </main>
-      <div class="dv"></div>
+      <div class="dv">
+        akdlsdsl
+      </div>
       <div class="dv"></div>
     </div>
+
+
+
+    <script type="module" src="/src/scripts/couses-logic.js"></script>
   </body>
 </html>
