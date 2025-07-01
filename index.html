@@ -39,18 +39,98 @@
           </div>
         </section>
 
-        <section class="feature-cards">
-          <h2 class="section-heading">FEATURED COURSES</h2>
+        <section class="feature-cards section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">FEATURED COURSES</h2>
           <div class="more-courses-div">
             <a href="/courses.html">See more <i class="ri-arrow-right-s-fill"></i></a>
+          </div>
           </div>
           <div class="card-container" id="cardContainer">
             
             <!-- add dynamically -->
           </div>
+            <div class="scroll-hint">
+              <p>Scroll right to check more <i class="ri-arrow-right-s-fill"></i></p>
+            </div>
         </section>
 
+        <section class="why-learn-with-us section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">WHY LEARN WITH US?</h2>
+          </div>
+
+          <div class="accordions">
+            
+            <div class="accordion" id="1" data-stage="close">
+              <div class="accord-heading" >
+                <h3>Interactive Learning <i class="ri-graduation-cap-fill"></i></h3>
+                <i class="ri-arrow-down-s-fill accord-arrow"></i>
+              </div>
+              <div class="accord-detail" id="1">
+                <p>Immerse yourself in hands-on learning experiences that keep you engaged. Explore interactive courses designed to make every lesson exciting and easy to follow.</p>
+              </div>
+            </div>
+
+            <div class="accordion" id="2" data-stage="close">
+              <div class="accord-heading">
+                <h3>Expert Instructors <i class="ri-user-2-fill"></i></h3>
+                <i class="ri-arrow-down-s-fill accord-arrow"></i>
+              </div>
+              <div class="accord-detail" data-accrodid="2">
+                <p>Learn from top professionals with years of experience in their fields. Our instructors are dedicated to providing practical knowledge and real-world insights.</p>
+              </div>
+            </div>
+            <div class="accordion" id="3" data-stage="close">
+              <div class="accord-heading" >
+                <h3>Flexible Schedules <i class="ri-time-fill"></i></h3>
+                <i class="ri-arrow-down-s-fill accord-arrow"></i>
+              </div>
+              <div class="accord-detail" data-accrodid="3">
+                <p>Study at your convenience with courses that adapt to your pace. Whether you have a busy schedule or ample free time, we’ve got you covered.</p>
+              </div>
+            </div>
+
+            <div class="accordion" id="4" data-stage="close">
+              <div class="accord-heading" >
+                <h3>Certifications <i class="ri-article-fill"></i></h3>
+                <i class="ri-arrow-down-s-fill accord-arrow"></i>
+              </div>
+              <div class="accord-detail" data-accrodid="4">
+                <p>Earn industry-recognized certificates to showcase your achievements. Take a step closer to your career goals with our credible and rewarding certifications.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="testimonial-section section">
+           <div class="section-heading-div">
+             <h2 class="section-heading">TESTIMONIALS</h2>
+            </div>
+            <div class="testimonials">
+              <div class="testimonial">
+                <div class="quote-symbol">
+                  <i class="ri-double-quotes-r"></i>
+                </div>
+                <div class="user-message">
+                  <p class="message">I love the flexibility this platform offers. Learning at my own pace has been a game-changer.</p>
+                </div>
+                <div class="user-img">
+                  <img src="https://picsum.photos/50"  width="50" height="50" alt="">
+                </div>
+                <div class="user-name">
+                  <h3 class="name">Liam Williams</h3>
+                </div>
+                <div class="post-timming">
+                  <p>2025-06-10</p>
+                </div>
+              </div>
+            </div>
+        </section>
       </main>
+
+
       <div class="dv">
         akdlsdsl
       </div>
@@ -60,5 +140,6 @@
 
 
     <script type="module" src="/src/scripts/couses-logic.js"></script>
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
