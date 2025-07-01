@@ -29,15 +29,23 @@
     gap: 20px;
 }
 
+.section {
+  margin: 50px 100px;
+}
+
+.section-heading-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
 .section-heading{
     font-size: var(--font-size-medium200);
     text-align: center;
-    margin-bottom: 50px;
+    grid-column: 2;
 }
 
 .more-courses-div{
     text-align: right;
-    margin-bottom: 30px;
 }
 .more-courses-div a{
     transition: all .3s ease-in-out;
@@ -51,8 +59,163 @@
     padding: 4px 4px;
     border-radius: var(--border-radius);
 }
+
+.scroll-hint{
+    text-align: center;
+    font-size: var(--font-size-small);
+}
+
+
+.accordions{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion{
+    max-width: 600px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.accord-heading{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accord-background-color);
+    align-items: center;
+    padding: 10px 20px;
+    border-radius:  var(--border-radius)  var(--border-radius) 0 0;
+}
+
+.accord-heading h3{
+    font-size: var(--font-size-medium);
+    color: var(--accord-heading-color);
+}
+.accord-arrow{
+    font-size: var(--font-size-medium200);
+}
+
+.accord-detail{
+    background-color: var(--accord-background-color);
+    padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+    /* opacity: 0; */
+    border-radius: 0 0  var(--border-radius)  var(--border-radius) ;
+}
+
+
+.testimonials{
+    margin: 50px 0;
+}
+
+.testimonial{
+    max-width: 300px;
+    height: 350px;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto auto;
+    justify-items: center;
+    gap: 10px;
+    background-color: var( --testimonial-bg-color);
+    box-shadow: 5px 5px 20px var( --shadow-color);
+    border-radius: calc(var(--border-radius) * 2);
+    padding: 20px;
+   
+}
+
+.quote-symbol{
+    font-size: var(--font-size-large100);
+}
+.user-message .message{
+    text-align: center;
+    line-height: 1.1;
+}
+
+.user-img{
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px var( --shadow-color);
+}
+.user-img img{
+    width: 70px;
+    height: 70px;  
+}
+
+.user-name .name{
+    font-size: var(--font-size-medium200);
+    font-weight: 500;
+}
+
+
   
 .dv{
  height: 100vh;
  background-color: aqua;
+}
+
+
+@media (max-width: 788px){
+    .section {
+  margin: 50px 50px;
+}
+
+.section-heading-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.section-heading{
+    font-size: var(--font-size-medium200);
+    text-align: center;
+}
+}
+
+@media (max-width: 550px){
+    .hero .hero-textcontent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 0 30px;
+}
+
+.hero .hero-textcontent .hero-heading{
+    font-size: var(--font-size-large);
+    color: var(--hero-heading-color);
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.hero .hero-textcontent .hero-subtext{
+    font-size: var(--font-size-medium);
+    color: var( --hero-subtext-color);
+}
+.hero .hero-textcontent .hero-cta{
+    /* padding: 10px 0; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: var(--font-size-base);
+    font-weight: 400;
+}
+ .section {
+  margin: 50px 30px;
+}
+
+
+.section-heading-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.more-courses-div{
+    text-align: right;
+}
+
 }
