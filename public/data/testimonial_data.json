@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "img": "https://picsum.photos/50?random=1",
+    "message": "This platform transformed my learning experience! The courses are detailed and engaging.",
+    "date": "2025-06-25"
+  },
+  {
+    "id": 2,
+    "name": "Michael Brown",
+    "img": "https://picsum.photos/50?random=2",
+    "message": "The instructors are incredibly knowledgeable, and the resources provided are top-notch.",
+    "date": "2025-06-20"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Martinez",
+    "img": "https://picsum.photos/50?random=3",
+    "message": "I love the flexibility this platform offers. Learning at my own pace has been a game-changer.",
+    "date": "2025-06-15"
+  },
+  {
+    "id": 4,
+    "name": "Liam Williams",
+    "img": "https://picsum.photos/50?random=4",
+    "message": "The interactive features make learning fun and easy to follow. Highly recommended!",
+    "date": "2025-06-10"
+  },
+  {
+    "id": 5,
+    "name": "Emma Davis",
+    "img": "https://picsum.photos/50?random=5",
+    "message": "Great platform with well-structured courses. I’ve gained so much confidence in my skills!",
+    "date": "2025-06-05"
+  },
+  {
+    "id": 6,
+    "name": "Oliver Smith",
+    "img": "https://picsum.photos/50?random=6",
+    "message": "The community is very supportive, and the learning materials are up to date.",
+    "date": "2025-06-01"
+  }
+]
