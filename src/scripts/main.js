@@ -1,4 +1,9 @@
 import Lenis from 'lenis'
+import { gsap } from "gsap";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Initialize a new Lenis instance for smooth scrolling
 const lenis = new Lenis();
@@ -14,3 +19,58 @@ gsap.ticker.add((time) => {
 
 // Disable lag smoothing in GSAP to prevent any delay in scroll animations
 gsap.ticker.lagSmoothing(0);
+
+
+function accordion(){
+  console.log("accordion");
+  
+  const accordions = document.querySelectorAll('.accordion');
+  const accordDetails = document.querySelectorAll('.accord-detail');
+  const accordSymbol = document.querySelectorAll('.accord-arrow')
+  console.log(accordDetails);
+  accordions.forEach((accordion,index) => {
+    accordion.addEventListener('click', (e) => {
+      const accord = e.currentTarget;
+      const content = accordDetails[index];
+      const symbol = accordSymbol[index];
+      // console.log(accord);
+      
+      const isClose = accord.dataset.stage === "close";
+      console.log(isClose);
+      
+
+      if(isClose){
+       
+        gsap.to(content, {
+          height: "calc(100% + 20px)",
+          paddingBottom: 20,
+          paddingTop:20,
+          ease: "power2.out",
+          opacity:1,
+          onComplete: () => {
+            accord.dataset.stage = "open";
+          }
+        });
+        gsap.to(symbol,{
+          rotateZ : "180deg"
+        })
+      }else{
+        gsap.to(content, {
+          height: "0",
+          paddingTop:0,
+          paddingBottom: 0,
+          ease: "power2.out",
+          onComplete: () => {
+            accord.dataset.stage = "close";
+          }
+          
+        });
+         gsap.to(symbol,{
+          rotateZ : "0"
+        })
+      }
+    });
+  });
+}
+
+accordion()
