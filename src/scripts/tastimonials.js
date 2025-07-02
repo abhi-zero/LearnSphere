@@ -1,11 +1,10 @@
 import { gsap } from "gsap";
 
-const url = '/data/testimonial_data.json';
+const url = "/data/testimonial_data.json";
 const testimonialContainer = document.querySelector(".testimonials");
+const testimonialCover = document.createElement("div");
+testimonialCover.classList.add("testimonial-cover");
 
-gsap.to(testimonialContainer,{
-    
-})
 function createTestimonialSkeletons() {
   // testimonial div
 
@@ -79,7 +78,7 @@ function createTestimonial(testData) {
   // userMessageText in userMessage
   const userMessageText = document.createElement("p");
   userMessageText.classList.add("message");
-  userMessageText.textContent = testData.message
+  userMessageText.textContent = testData.message;
 
   userMessage.appendChild(userMessageText);
   testimonial.appendChild(userMessage);
@@ -87,7 +86,7 @@ function createTestimonial(testData) {
   // userImg in testimonial
   const userImg = document.createElement("div");
   userImg.classList.add("user-img");
- // img in userImg
+  // img in userImg
   const img = document.createElement("img");
   img.src = testData.img;
 
@@ -97,7 +96,7 @@ function createTestimonial(testData) {
   // userName in testimonial
   const userName = document.createElement("div");
   userName.classList.add("user-name");
-   // userNameText in userName
+  // userNameText in userName
   const userNameText = document.createElement("p");
   userNameText.classList.add("name");
   userNameText.textContent = testData.name;
@@ -108,7 +107,7 @@ function createTestimonial(testData) {
   // postTiming in testimonial
   const postTiming = document.createElement("div");
   postTiming.classList.add("post-timing");
- // postTimingText in userMessage
+  // postTimingText in userMessage
   const postTimingText = document.createElement("p");
   postTimingText.textContent = testData.date;
 
@@ -118,26 +117,51 @@ function createTestimonial(testData) {
   return testimonial;
 }
 
-function loadTestimonials(){
+function animateTestimonial() {
+  const cover = document.querySelector(".testimonial-cover");
+  const content = document.querySelectorAll(".testimonial");
+  let animations = [];
    
+    content.forEach((elem) => {
+      cover.appendChild(elem.cloneNode(true));
+    });
+  
+   const animation = gsap.to(cover, {
+      x: "-50%",
+      repeat: -1,
+      duration: 25,
+      ease: "linear",
+    });
+    animations.push(animation);
 
-    fetch(url)
+    cover.addEventListener('mouseenter', ()=> {
+      animations.forEach(anim => anim.pause())
+    })
+    cover.addEventListener('mouseleave', ()=> {
+      animations.forEach(anim => anim.play())
+    })
+}
+
+function loadTestimonials() {
+  fetch(url)
     .then((response) => {
-        if(!response.ok){
-            throw new Error('Faild to fetch Testimonials')
-        }
-        return response.json();
+      if (!response.ok) {
+        throw new Error("Faild to fetch Testimonials");
+      }
+      return response.json();
     })
     .then((data) => {
-        testimonialContainer.innerHTML= "";
-        data.forEach(testData =>{
-            const testimonial = createTestimonial(testData);
-            testimonialContainer.appendChild(testimonial);
-        })
+      testimonialContainer.innerHTML = "";
+      data.forEach((testData) => {
+        const testimonial = createTestimonial(testData);
+        testimonialCover.appendChild(testimonial);
+        testimonialContainer.appendChild(testimonialCover);
+      });
+      animateTestimonial();
     })
-    .catch((error)=>{
-        console.error("Error :", error);
-    })
+    .catch((error) => {
+      console.error("Error :", error);
+    });
 }
 
 loadTestimonials();

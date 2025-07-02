@@ -111,7 +111,13 @@
     display: flex;
     overflow: hidden;
     gap: 100px;
-    padding: 20px;
+}
+
+.testimonial-cover{
+    display: flex;
+    gap: 100px;
+     padding: 30px 20px;
+     width: max-content;
 }
 
 .testimonial{
@@ -127,7 +133,11 @@
     border-radius: calc(var(--border-radius) * 2);
     padding: 20px;
     cursor: pointer;
-   
+    transform: rotateZ(-5deg);
+   transition: all .3s ease-in-out;
+}
+.testimonial:hover{
+     transform: rotateZ(0deg);
 }
 
 .quote-symbol{
