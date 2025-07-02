@@ -2,6 +2,7 @@ import Lenis from 'lenis'
 import { gsap } from "gsap";
     
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { faPause } from '@fortawesome/free-solid-svg-icons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,6 +20,28 @@ gsap.ticker.add((time) => {
 
 // Disable lag smoothing in GSAP to prevent any delay in scroll animations
 gsap.ticker.lagSmoothing(0);
+
+function navMobile(){
+  const menuBtn = document.querySelector('.menu-btn');
+  const closeBtn = document.querySelector('.close-btn');
+  const mobileMenu = document.querySelector('.menu ul');
+  const tl = gsap.timeline();
+   tl.to(mobileMenu,{
+       right: "-3%",
+    })
+    tl.pause()
+  menuBtn.addEventListener('click', ()=>{
+    tl.play();
+  })
+  closeBtn.addEventListener('click', ()=>{
+    tl.reverse();
+  })
+
+}
+
+navMobile();
+
+
 
 
 function accordion(){
@@ -74,3 +97,22 @@ function accordion(){
 }
 
 accordion()
+
+
+function heroSectionAnimation(){
+    const heroText = document.querySelector('.hero-heading');
+    const heroSubText = document.querySelector('.hero-subtext');
+    const tl = gsap.timeline()
+
+    tl.from(heroSubText, {
+      y: 20,
+      opacity: 0,
+      ease: "power2.in"
+    })
+    .from(heroText, {
+      y: 30,
+      opacity: 0,
+      ease: "power2.in"
+    })
+}
+heroSectionAnimation();
