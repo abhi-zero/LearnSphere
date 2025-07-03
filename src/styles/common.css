@@ -31,6 +31,7 @@
   --dark-color: #333333; /* Dark text and footer background */
   --white: #ffffff; /* White text for dark backgrounds */
   --off-white: #cccccc; /* Secondary text */
+  --grey : #716f6f;
   
   --card-bg: #ffffff; /* Background for cards */
   --shadow-color: rgba(0, 0, 0, 0.3); /* Shadow for cards and elements */
@@ -56,6 +57,7 @@
  --accord-heading-color : var(--dark-color);
  --accord-background-color: var(--off-white);
  --testimonial-bg-color: var(--white);
+ --search-section-bg: hsl(from var(--dark-color) h s l / .5);
 
   /* Typography */
   --font-family: "Roboto", sans-serif;
@@ -311,15 +313,31 @@ header nav .menu ul li a:hover::after {
 }
 
 
+
 .card-container {
   display: flex;
   gap: 20px;
   overflow-x: scroll;
   padding: 40px 20px;
 }
+.section {
+  margin: 50px 50px;
+}
+
+.section-heading-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.section-heading{
+    font-size: var(--font-size-medium200);
+    text-align: center;
+    grid-column: 2;
+}
 .card-container::-webkit-scrollbar{
  display: none;
 }
+
 
 .card {
   flex-shrink: 0;
@@ -478,7 +496,10 @@ img {
   height: 30px;
   border-radius: 6px;
 }
-
+.scroll-hint{
+    text-align: center;
+    font-size: var(--font-size-small);
+}
 
 footer{
   display: flex;
@@ -496,7 +517,7 @@ footer .footer-main{
 }
 .links{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   padding-left: 90px;
   padding-right: 30px;
   padding-block:50px ;
