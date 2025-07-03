@@ -50,7 +50,6 @@ function accordion(){
   const accordions = document.querySelectorAll('.accordion');
   const accordDetails = document.querySelectorAll('.accord-detail');
   const accordSymbol = document.querySelectorAll('.accord-arrow')
-  console.log(accordDetails);
   accordions.forEach((accordion,index) => {
     accordion.addEventListener('click', (e) => {
       const accord = e.currentTarget;
