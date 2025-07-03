@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="/src/styles/index.css">
-    <link rel="stylesheet" href="/src/styles/common.css">
+    <link rel="stylesheet" href="/src/styles/common.css" />
+    <link rel="stylesheet" href="/src/styles/course_page.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses</title>
   </head>
@@ -27,7 +27,106 @@
           </div>
         </nav>
       </header>
-      
+      <main>
+        <section class="hero">
+          <div class="search-section">
+            <input type="text" name="searchbar" id="searchBar" placeholder="Search for Courses">
+            <button type="clear"><i class="ri-close-line"></i></button>
+            <div class="suggestions">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+         <section class="courses section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">COURSES</h2>
+          </div>
+          <div class="card-container course-page not-overflow" id="cardContainer">
+            
+            <!-- add dynamically -->
+          </div>
+        </section>
+
+         <section class="popular-courses section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">POPULOR COURSES</h2>
+          </div>
+          <div class="card-container course-page" id="popularCardContainer">
+            
+            <!-- add dynamically -->
+          </div>
+            <div class="scroll-hint">
+              <p>Scroll right to check more <i class="ri-arrow-right-s-fill"></i></p>
+            </div>
+        </section>
+         <section class="recommended-courses section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">RECOMMENDED COURSES</h2>
+          </div>
+          <div class="card-container course-page" id="recommendedCardContainer">
+            
+            <!-- add dynamically -->
+          </div>
+            <div class="scroll-hint">
+              <p>Scroll right to check more <i class="ri-arrow-right-s-fill"></i></p>
+            </div>
+        </section>
+      </main>
+      <footer>
+       <section class="footer-main">
+         <section class="links">
+          <section class="footer-sections">
+            <h3 class="heading">About Us</h3>
+            <ul>
+              <li><a href="">Our Story</a></li>
+              <li><a href="">Carrers</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </section>
+          <section class="footer-sections">
+            <h3 class="heading">Explore</h3>
+            <ul>
+              <li><a href="">Courses</a></li>
+              <li><a href="">Categories</a></li>
+              <li><a href="">Tutorials</a></li>
+            </ul>
+          </section>
+          <section class="footer-sections">
+            <h3 class="heading">Support</h3>
+            <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Term & Privacy</a></li>
+            </ul>
+          </section>
+          <section class="footer-sections">
+            <h3 class="heading">Follow Us</h3>
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">LinkedIn</a></li>
+              <li><a href="">Twitter</a></li>
+            </ul>
+          </section>
+        </section>
+         <section class="newsletter">
+             <h3 class="heading">Newsletter</h3>
+             <div class="input">
+              <input type="email" name="email" id="Email" placeholder="Email address">
+              <button type="submit"><i class="ri-arrow-right-long-line"></i></button>
+             </div>
+          </section>
+        </section>
+        <section class="footer-note">
+            <p>Copyright © 2025 E-Learn Platform. All rights reserved.</p>
+        </section>
+      </footer>
     </div>
+     <script type="module" src="/src/scripts/courses-logic.js"></script>
+     <script type="module" src="/src/scripts/courses-page.js"></script>
+     <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
