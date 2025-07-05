@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "title": "Mastering Front-End Development",
+    "category": "Frontend",
+    "shortTag": "Frontend",
+    "duration": { "hours": 6, "minutes": 0 },
+    "rating": 4.5,
+    "stars": [
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star-half-alt'></i>"
+    ],
+    "skills": [
+      "<i class='fab fa-html5'></i> HTML",
+      "<i class='fab fa-css3-alt'></i> CSS",
+      "<i class='fab fa-js'></i> JavaScript"
+    ],
+    "enrollButtonText": "Enroll Now",
+    "thumbnail": "https://web.dev/static/learn/html/card_720.png",
+    "description": "Learn HTML, CSS, and JavaScript from scratch. Perfect for beginners aiming to become front-end developers.",
+    "instructor": {
+      "name": "John Doe",
+      "profilePicture": "https://randomuser.me/api/portraits/men/32.jpg",
+      "bio": "Senior Front-End Developer with 10+ years of experience."
+    },
+    "heroBackgrounds": [
+      "/images/course-detail-page-images/course-detail-page-bg1.jpg",
+      "/images/course-detail-page-images/course-detail-page-bg2.jpg"
+    ],
+    "videoSettings": {
+      "theme": "dark",
+      "controls": ["play", "pause", "fullscreen"],
+      "playerStyle": {
+        "background": "#000",
+        "color": "#fff"
+      }
+    },
+    "whatYouWillLearn": [
+      "Build semantic HTML structure from scratch",
+      "Style layouts responsively using modern CSS techniques",
+      "Add interactivity with vanilla JavaScript",
+      "Understand the core principles of front-end development",
+      "Debug and test front-end code efficiently"
+    ],
+    "chapters": [
+      {
+        "id": "c1",
+        "title": "Intro to HTML",
+        "videoUrl": "https://example.com/videos/html-intro.mp4",
+        "duration": "10:00",
+        "description": "Understand the structure and purpose of HTML tags.",
+        "transcript": "In this video, we cover the basic structure of an HTML page including the doctype, html, head, and body tags..."
+      },
+      {
+        "id": "c2",
+        "title": "CSS Basics",
+        "videoUrl": "https://example.com/videos/css-basics.mp4",
+        "duration": "15:30",
+        "description": "Learn to apply styles, manage layouts, and use media queries.",
+        "transcript": "This chapter introduces styling fundamentals using CSS properties such as color, margin, padding..."
+      },
+      {
+        "id": "c3",
+        "title": "JavaScript Start",
+        "videoUrl": "https://example.com/videos/js-start.mp4",
+        "duration": "20:00",
+        "description": "Begin using JavaScript for logic, DOM manipulation, and interactivity.",
+        "transcript": "We dive into variables, conditionals, and events to create simple interactivity..."
+      }
+    ],
+    "resources": [
+      {
+        "title": "HTML Cheatsheet",
+        "url": "https://example.com/resources/html-cheatsheet.pdf"
+      },
+      {
+        "title": "CSS Flexbox Guide",
+        "url": "https://example.com/resources/css-flexbox.pdf"
+      }
+    ],
+    "prerequisites": [
+      "Basic computer knowledge",
+      "Familiarity with using a web browser",
+      "Willingness to learn and practice coding"
+    ],
+    "certificate": {
+      "available": true,
+      "name": "Certificate of Completion",
+      "previewImage": "https://example.com/images/certificate-preview.jpg",
+      "downloadUrl": "https://example.com/certificates/dummy-certificate.pdf"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Introduction to Python Programming",
+    "category": "Backend",
+    "shortTag": "Python",
+    "duration": { "hours": 8, "minutes": 30 },
+    "rating": 4.8,
+    "stars": [
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star-half-alt'></i>"
+    ],
+    "skills": [
+      "<i class='fab fa-python'></i> Python",
+      "<i class='fas fa-puzzle-piece'></i> Problem Solving",
+      "<i class='fas fa-brain'></i> Logic"
+    ],
+    "enrollButtonText": "Enroll Now",
+    "thumbnail": "https://web.dev/static/learn/html/python_card_720.png",
+    "description": "Start your journey in programming with Python. Learn variables, loops, conditionals, and functions through real-world problems.",
+    "instructor": {
+      "name": "Jane Smith",
+      "profilePicture": "https://randomuser.me/api/portraits/women/44.jpg",
+      "bio": "Python educator and software engineer with a passion for teaching beginners."
+    },
+    "heroBackgrounds": [
+      "/images/course-detail-page-images/course-detail-page-bg1.jpg",
+      "/images/course-detail-page-images/course-detail-page-bg2.jpg"
+    ],
+    "videoSettings": {
+      "theme": "dark",
+      "controls": ["play", "pause", "fullscreen"],
+      "playerStyle": {
+        "background": "#000",
+        "color": "#fff"
+      }
+    },
+    "whatYouWillLearn": [
+      "Understand Python syntax and basic structures",
+      "Write scripts for everyday tasks",
+      "Use conditionals and loops effectively",
+      "Understand functions and modular coding",
+      "Practice solving algorithmic problems"
+    ],
+    "chapters": [
+      {
+        "id": "c1",
+        "title": "Getting Started with Python",
+        "videoUrl": "https://example.com/videos/python-intro.mp4",
+        "duration": "12:00",
+        "description": "Learn how to install Python and write your first script.",
+        "transcript": "In this module, we explore how to get started with Python installation and basic syntax..."
+      },
+      {
+        "id": "c2",
+        "title": "Variables and Data Types",
+        "videoUrl": "https://example.com/videos/python-variables.mp4",
+        "duration": "17:20",
+        "description": "Understand Python variables, data types, and basic I/O.",
+        "transcript": "Here we look at numbers, strings, input functions, and type conversions..."
+      },
+      {
+        "id": "c3",
+        "title": "Loops and Conditionals",
+        "videoUrl": "https://example.com/videos/python-loops.mp4",
+        "duration": "22:00",
+        "description": "Control the flow of your programs with if statements and loops.",
+        "transcript": "We’ll dive into `if`, `elif`, `else`, `while`, and `for` statements in real scenarios..."
+      }
+    ],
+    "resources": [
+      {
+        "title": "Python Quick Reference",
+        "url": "https://example.com/resources/python-quickref.pdf"
+      },
+      {
+        "title": "Practice Problems",
+        "url": "https://example.com/resources/python-practice.pdf"
+      }
+    ],
+    "prerequisites": [
+      "No prior programming experience required",
+      "Comfortable with typing and basic computer usage"
+    ],
+    "certificate": {
+      "available": true,
+      "name": "Certificate of Completion",
+      "previewImage": "https://example.com/images/python-certificate-preview.jpg",
+      "downloadUrl": "https://example.com/certificates/python-certificate.pdf"
+    }
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Essentials",
+    "category": "Design",
+    "shortTag": "UI/UX",
+    "duration": { "hours": 5, "minutes": 45 },
+    "rating": 4.6,
+    "stars": [
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star'></i>",
+      "<i class='fas fa-star-half-alt'></i>"
+    ],
+    "skills": [
+      "<i class='fas fa-object-group'></i> User Interface",
+      "<i class='fas fa-users'></i> User Experience",
+      "<i class='fas fa-lightbulb'></i> Design Thinking"
+    ],
+    "enrollButtonText": "Enroll Now",
+    "thumbnail": "https://web.dev/static/learn/html/uiux_card_720.png",
+    "description": "Explore the foundations of UI/UX design. Learn how to create user-friendly interfaces using modern design tools and principles.",
+    "instructor": {
+      "name": "Alice Johnson",
+      "profilePicture": "https://randomuser.me/api/portraits/women/68.jpg",
+      "bio": "Product designer and UX mentor with over 7 years in digital design."
+    },
+    "heroBackgrounds": [
+      "/images/course-detail-page-images/course-detail-page-bg1.jpg",
+      "/images/course-detail-page-images/course-detail-page-bg2.jpg"
+    ],
+    "videoSettings": {
+      "theme": "dark",
+      "controls": ["play", "pause", "fullscreen"],
+      "playerStyle": {
+        "background": "#000",
+        "color": "#fff"
+      }
+    },
+    "whatYouWillLearn": [
+      "Understand the UI/UX design process",
+      "Learn about wireframing and prototyping",
+      "Use Figma or Sketch for interface design",
+      "Create user flows and personas",
+      "Apply usability testing techniques"
+    ],
+    "chapters": [
+      {
+        "id": "c1",
+        "title": "Intro to UI/UX",
+        "videoUrl": "https://example.com/videos/uiux-intro.mp4",
+        "duration": "08:30",
+        "description": "Get an overview of what UI and UX really mean.",
+        "transcript": "We introduce the design process and distinguish between UI and UX roles..."
+      },
+      {
+        "id": "c2",
+        "title": "Wireframes and Layouts",
+        "videoUrl": "https://example.com/videos/uiux-wireframes.mp4",
+        "duration": "18:00",
+        "description": "Design clear and functional layouts using low-fidelity wireframes.",
+        "transcript": "You’ll learn how to sketch out basic layouts and structure your app's information..."
+      },
+      {
+        "id": "c3",
+        "title": "High-Fidelity Prototyping",
+        "videoUrl": "https://example.com/videos/uiux-prototype.mp4",
+        "duration": "19:30",
+        "description": "Use Figma or Sketch to create high-fidelity interactive prototypes.",
+        "transcript": "Now we explore clickable prototypes and how to test them with real users..."
+      }
+    ],
+    "resources": [
+      {
+        "title": "UX Checklist",
+        "url": "https://example.com/resources/ux-checklist.pdf"
+      },
+      {
+        "title": "Figma Starter Kit",
+        "url": "https://example.com/resources/figma-kit.zip"
+      }
+    ],
+    "prerequisites": [
+      "Basic understanding of how apps/websites work",
+      "Interest in design and user psychology"
+    ],
+    "certificate": {
+      "available": true,
+      "name": "Certificate of Completion",
+      "previewImage": "https://example.com/images/uiux-certificate-preview.jpg",
+      "downloadUrl": "https://example.com/certificates/uiux-certificate.pdf"
+    }
+  }
+]
