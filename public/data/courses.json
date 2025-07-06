@@ -18,10 +18,7 @@
       "<i class='fab fa-css3-alt'></i>",
       "<i class='fab fa-js-square'></i>"
     ],
-    "duration": {
-      "hours": "06",
-      "minutes": "00"
-    },
+    "duration": { "hours": "06", "minutes": "00" },
     "cta": ["Enroll Now", "Learn More", "Start Today"],
     "category": "Frontend",
     "popular": true,
@@ -41,13 +38,8 @@
       "<i class='ri-star-fill'></i>",
       "<i class='ri-star-fill'></i>"
     ],
-    "skills": [
-      "<i class='fab fa-python'></i>"
-    ],
-    "duration": {
-      "hours": "08",
-      "minutes": "30"
-    },
+    "skills": ["<i class='fab fa-python'></i>"],
+    "duration": { "hours": "08", "minutes": "30" },
     "cta": ["Enroll Now", "Learn More", "Start Today"],
     "category": "Backend",
     "popular": false,
@@ -67,14 +59,8 @@
       "<i class='ri-star-fill'></i>",
       "<i class='ri-star-half-fill'></i>"
     ],
-    "skills": [
-      "<i class='fab fa-sketch'></i>",
-      "<i class='fab fa-adobe'></i>"
-    ],
-    "duration": {
-      "hours": "05",
-      "minutes":"45"
-    },
+    "skills": ["<i class='fab fa-sketch'></i>", "<i class='fab fa-adobe'></i>"],
+    "duration": { "hours": "05", "minutes": "45" },
     "cta": ["Enroll Now", "Learn More", "Start Today"],
     "category": "Design",
     "popular": true,
@@ -94,17 +80,356 @@
       "<i class='ri-star-fill'></i>",
       "<i class='ri-star-half-fill'></i>"
     ],
-    "skills": [
-      "<i class='fab fa-js-square'></i>"
-    ],
-    "duration": {
-      "hours": 7,
-      "minutes": 15
-    },
+    "skills": ["<i class='fab fa-js-square'></i>"],
+    "duration": { "hours": "07", "minutes": "15" },
     "cta": ["Enroll Now", "Learn More", "Start Today"],
     "category": "Frontend",
     "popular": false,
     "recommended": true
+  },
+  {
+    "id": 5,
+    "title": "React for Beginners",
+    "thumbnail": "https://web.dev/static/learn/html/react_card_720.png",
+    "description": "Build dynamic user interfaces with React.js from scratch.",
+    "instructor": "Emily White",
+    "rating": 4.9,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>"
+    ],
+    "skills": ["<i class='fab fa-react'></i>", "<i class='fab fa-js-square'></i>"],
+    "duration": { "hours": "09", "minutes": "00" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Frontend",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 6,
+    "title": "Full-Stack Web Development",
+    "thumbnail": "https://web.dev/static/learn/html/fullstack_card_720.png",
+    "description": "Become a full-stack web developer using MERN stack.",
+    "instructor": "David Lee",
+    "rating": 4.4,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": [
+      "<i class='fab fa-node-js'></i>",
+      "<i class='fab fa-react'></i>",
+      "<i class='fas fa-database'></i>"
+    ],
+    "duration": { "hours": "12", "minutes": "00" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Fullstack",
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": 7,
+    "title": "Java Programming Masterclass",
+    "thumbnail": "https://web.dev/static/learn/html/java_card_720.png",
+    "description": "Learn Java from the ground up with real-world projects.",
+    "instructor": "Rachel Green",
+    "rating": 4.2,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": ["<i class='fab fa-java'></i>"],
+    "duration": { "hours": "10", "minutes": "30" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Backend",
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": 8,
+    "title": "Building RESTful APIs with Node.js",
+    "thumbnail": "https://web.dev/static/learn/html/node_card_720.png",
+    "description": "Create powerful backends using Express and Node.js.",
+    "instructor": "Tom Wilson",
+    "rating": 4.6,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>"
+    ],
+    "skills": ["<i class='fab fa-node-js'></i>", "<i class='fas fa-server'></i>"],
+    "duration": { "hours": "06", "minutes": "45" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Backend",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 9,
+    "title": "Intro to Machine Learning",
+    "thumbnail": "https://web.dev/static/learn/html/ml_card_720.png",
+    "description": "Understand the basics of ML algorithms and workflows.",
+    "instructor": "Dr. Sarah Kim",
+    "rating": 4.7,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>"
+    ],
+    "skills": ["<i class='fas fa-robot'></i>", "<i class='fab fa-python'></i>"],
+    "duration": { "hours": "11", "minutes": "00" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "AI",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 10,
+    "title": "DevOps Fundamentals",
+    "thumbnail": "https://web.dev/static/learn/html/devops_card_720.png",
+    "description": "Learn CI/CD, Docker, and automation tools for developers.",
+    "instructor": "Chris Nolan",
+    "rating": 4.5,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": ["<i class='fab fa-docker'></i>", "<i class='fas fa-tools'></i>"],
+    "duration": { "hours": "09", "minutes": "15" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "DevOps",
+    "popular": true,
+    "recommended": false
+  },
+  {
+    "id": 11,
+    "title": "Advanced CSS Animations",
+    "thumbnail": "https://web.dev/static/learn/html/cssanimations_card_720.png",
+    "description": "Create stunning web animations using CSS and modern techniques.",
+    "instructor": "Laura Adams",
+    "rating": 4.3,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": ["<i class='fab fa-css3-alt'></i>", "<i class='fas fa-magic'></i>"],
+    "duration": { "hours": "04", "minutes": "30" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Frontend",
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": 12,
+    "title": "TypeScript with React",
+    "thumbnail": "https://web.dev/static/learn/html/ts_card_720.png",
+    "description": "Build scalable React applications using TypeScript.",
+    "instructor": "Nina Patel",
+    "rating": 4.7,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>"
+    ],
+    "skills": [
+      "<i class='fab fa-react'></i>",
+      "<i class='fas fa-code'></i>"
+    ],
+    "duration": { "hours": "06", "minutes": "20" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Frontend",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 13,
+    "title": "Introduction to MongoDB",
+    "thumbnail": "https://web.dev/static/learn/html/mongodb_card_720.png",
+    "description": "Learn how to build and manage NoSQL databases with MongoDB.",
+    "instructor": "Greg Harmon",
+    "rating": 4.4,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": ["<i class='fas fa-database'></i>"],
+    "duration": { "hours": "05", "minutes": "40" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Backend",
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": 14,
+    "title": "Kubernetes for Beginners",
+    "thumbnail": "https://web.dev/static/learn/html/k8s_card_720.png",
+    "description": "Deploy and manage containerized applications with Kubernetes.",
+    "instructor": "Olivia Grey",
+    "rating": 4.6,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>"
+    ],
+    "skills": ["<i class='fab fa-docker'></i>", "<i class='fas fa-network-wired'></i>"],
+    "duration": { "hours": "08", "minutes": "15" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "DevOps",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 15,
+    "title": "Intro to Mobile App Development",
+    "thumbnail": "https://web.dev/static/learn/html/mobiledev_card_720.png",
+    "description": "Build your first mobile app using React Native.",
+    "instructor": "Jason Miller",
+    "rating": 4.5,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": ["<i class='fab fa-react'></i>", "<i class='fas fa-mobile-alt'></i>"],
+    "duration": { "hours": "07", "minutes": "10" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Mobile",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 16,
+    "title": "Figma for Designers",
+    "thumbnail": "https://web.dev/static/learn/html/figma_card_720.png",
+    "description": "Design professional UI mockups using Figma.",
+    "instructor": "Amy Rose",
+    "rating": 4.3,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": ["<i class='fab fa-figma'></i>"],
+    "duration": { "hours": "03", "minutes": "50" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Design",
+    "popular": false,
+    "recommended": false
+  },
+  {
+    "id": 17,
+    "title": "Data Analysis with Pandas",
+    "thumbnail": "https://web.dev/static/learn/html/pandas_card_720.png",
+    "description": "Analyze and visualize data using Python and Pandas.",
+    "instructor": "Dr. Kevin Rao",
+    "rating": 4.6,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-half-fill'></i>"
+    ],
+    "skills": ["<i class='fab fa-python'></i>", "<i class='fas fa-chart-line'></i>"],
+    "duration": { "hours": "05", "minutes": "20" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Data Science",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 18,
+    "title": "AI Chatbot Development",
+    "thumbnail": "https://web.dev/static/learn/html/chatbot_card_720.png",
+    "description": "Build smart chatbots using NLP and AI tools.",
+    "instructor": "Sandra Blake",
+    "rating": 4.8,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>"
+    ],
+    "skills": ["<i class='fas fa-robot'></i>", "<i class='fab fa-python'></i>"],
+    "duration": { "hours": "06", "minutes": "50" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "AI",
+    "popular": true,
+    "recommended": true
+  },
+  {
+    "id": 19,
+    "title": "GraphQL Crash Course",
+    "thumbnail": "https://web.dev/static/learn/html/graphql_card_720.png",
+    "description": "Build APIs with GraphQL for efficient data fetching.",
+    "instructor": "Timothy Lang",
+    "rating": 4.4,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-line'></i>"
+    ],
+    "skills": ["<i class='fas fa-code-branch'></i>"],
+    "duration": { "hours": "04", "minutes": "30" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Backend",
+    "popular": false,
+    "recommended": true
+  },
+  {
+    "id": 20,
+    "title": "Next.js for Production",
+    "thumbnail": "https://web.dev/static/learn/html/nextjs_card_720.png",
+    "description": "Create SEO-optimized, server-rendered React apps using Next.js.",
+    "instructor": "Linda Fox",
+    "rating": 4.9,
+    "stars": [
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>",
+      "<i class='ri-star-fill'></i>"
+    ],
+    "skills": ["<i class='fab fa-react'></i>", "<i class='fas fa-server'></i>"],
+    "duration": { "hours": "07", "minutes": "30" },
+    "cta": ["Enroll Now", "Learn More", "Start Today"],
+    "category": "Frontend",
+    "popular": true,
+    "recommended": true
   }
-]
-  
+  ]
+
+
