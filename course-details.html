@@ -3,8 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-       <link rel="stylesheet" href="/src/styles/course-detail.css" />
+    <link rel="stylesheet" href="/src/styles/course-detail.css" />
     <link rel="stylesheet" href="/src/styles/common.css" />
+    <link
+      href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Details</title>
   </head>
@@ -32,18 +44,107 @@
           <div class="hero-textcontent">
             <h1 class="hero-heading"></h1>
             <p class="sub-text"></p>
-            <p class="course-timing"></p>
-            <div class="rating-div">
-              <div class="stars"></div>
-              <p class="rating"></p>
+            <div class="additional-details">
+              <p class="course-timing"></p>
+              <div class="rating-div">
+                <div class="stars"></div>
+                <p class="rating"></p>
+              </div>
+              <div class="skills"></div>
             </div>
-            <div class="skills">
-
-            </div>
-             <div class="hero-cta">
-              <button class="button primary-cta">Explore Courses</button>
+            <div class="hero-cta">
+              <button class="button primary-cta course-cta">
+                Explore Courses
+              </button>
             </div>
           </div>
+        </section>
+
+        <section class="course-description section">
+          <div class="course-details">
+            <div class="thumbnail">
+              <img src="images/thumbnails/frontend.svg" alt="" />
+            </div>
+
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+          <div class="instructor-detials section">
+            <div class="section-heading-div">
+              <h2 class="section-heading">Instructor</h2>
+            </div>
+            <div class="instructor-card" title="Click and check more Details">
+              <div class="instructor-info">
+                <div class="instructor-profile">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" />
+                </div>
+                <div class="instructor-name">
+                  <h3></h3>
+                </div>
+              </div>
+              <div class="instructor-bio">
+                <p class="bio"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="What-you-learn section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">WHAT YOU'LL LEARN</h2>
+          </div>
+          <div class="list">
+            <ul></ul>
+          </div>
+        </section>
+
+        <section class="video-section section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">COURSE VIDEO</h2>
+          </div>
+          <div class="course-video-div">
+            <video
+              id="my_video_1"
+              class="video-js vjs-theme-city vjs-big-play-centered"
+              controls
+              preload="none"
+              poster="images/thumbnails/frontend.svg"
+              data-setup="{}"
+            >
+              <source
+                src="https://vjs.zencdn.net/v/oceans.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </section>
+
+        <section class="course-chapters section">
+          <div class="section-heading-div">
+            <h2 class="section-heading">Course Chapters</h2>
+          </div>
+          <div class="progress-bar-div">
+            <h4 class="progress-title"><span class="progress-value">50%</span> Completed</h4>
+            <div class="progress">
+              <div class="progress-inner"></div>
+            </div>
+          </div>
+          <div class="all-chapters">
+            <h3 class="title">Chapters</h3>
+            <div class="chapter">
+              <div class="chapter-num-div">
+                <h1 class="chapter-id">1</h1>
+              </div>
+              <h4 class="chapter-title">Lorem ipsum dolor sit amet.</h4>
+              <p class="chapter-duration">5min</p>
+              <div class="chapter-progress">
+                <div class="progress-symbol"><i class="fa-solid fa-check"></i></div>
+                <div class="progress-text">Complete</div>
+              </div>
+            </div>
+          </div>
+         
         </section>
       </main>
 
@@ -105,7 +206,7 @@
       </footer>
     </div>
 
-
     <script type="module" src="/src/scripts/course-deatil.js"></script>
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
